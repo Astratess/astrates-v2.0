@@ -1,0 +1,274 @@
+.waterfall-container {
+	position: absolute;
+	left: 23.5%;
+	transform: translateX(-50%);
+	top: 0;
+	width: 15.4%;
+	height: 100%;
+	background-size: 100% 100%;
+	z-index: 5;
+}
+
+.waterfall {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(180deg, rgba(124,235,250,1) 0%, rgba(18,171,244,1) 50%, rgba(0,212,255,1) 100%);
+}
+
+.waterfall-mask {
+	position: absolute; 
+	left:0;
+	top: 0;
+	height: 5%;
+	width: 100%;
+	background: linear-gradient(to bottom, rgba(124,235,250,1) 0%, rgba(124,235,250,0) 100%);
+	z-index: 3;
+}
+
+.flow {
+	position: absolute; 
+	left:0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(to bottom, rgba(255,255, 255, 0.4), transparent 40%,rgba(255,255, 255, 0.4));
+	background-size: 100% 90px;
+	background-attachment: fixed;
+	z-index: 1;
+	animation: waterfall-loop 1s infinite linear; 
+}
+
+.bubbles-container {
+	position: absolute;
+	bottom: 0%;
+	left: 0%;
+	width: 100%;
+	height: 10%;
+	z-index: 2; 
+}
+
+.bubbles {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	transform: translateY(50%);
+}
+
+.bubbles i {
+	position: absolute;
+	aspect-ratio: 1;
+	width: 32%;
+	border-radius: 50%;
+	background: linear-gradient(12deg, rgba(0,212,255,1) 0%, rgba(255,255,255,1) 36%);
+	left: -10%;
+	bottom: 0%;
+}
+
+.bubbles i:nth-child(1) {
+	left: -10%;
+	bottom: 0%;
+	animation: 2s bubbles 0.5s ease-in-out infinite;
+	z-index: 1;
+}
+
+.bubbles i:nth-child(2) {
+	left: 20%;
+	bottom: -25%;
+	animation: 2s bubbles ease-in-out infinite;
+	z-index: 1;
+}
+
+.bubbles i:nth-child(3) {
+	left: 50%;
+	bottom: -25%;
+	animation: 2s bubbles ease-in-out infinite;
+	z-index: 1;
+}
+
+.bubbles i:nth-child(4) {
+	left: 80%;
+	bottom: -10%;
+	animation: 2s bubbles 0.5 ease-in-out infinite;
+	z-index: 1;
+}
+
+.bubbles i:nth-child(5) {
+	width: 22%;
+	left: 10%;
+	bottom: 60%;
+	opacity: 0.7;
+	animation: 2s bubbles 0.5s ease-in-out infinite;
+}
+.bubbles i:nth-child(6) {
+	width: 25%;
+	left: 42%;
+	bottom: 40%;
+	opacity: 0.7;
+	animation: 2s bubbles 0.5s ease-in-out infinite;
+}
+
+.bubbles i:nth-child(7) {
+	width: 25%;
+	left: 72%;
+	bottom: 50%;
+	opacity: 0.7;
+	animation: 2s bubbles 0.5s ease-in-out infinite;
+}
+
+.bubbles i:nth-child(8) {
+	width: 26%;
+	left: 26%;
+	bottom: 45%;
+	opacity: 0.5;
+	border: 10px solid #fff;
+	animation: 2s bubbles 0.25s ease-in-out infinite;
+}
+
+.bubbles i:nth-child(9) {
+	width: 26%;
+	left: 58%;
+	bottom: 55%;
+	opacity: 0.5;
+	border: 10px solid #fff;
+	animation: 2s bubbles 0.25s ease-in-out infinite;
+}
+
+.bubbles i:nth-child(10) {
+	width: 17%;
+	left: 12.5%;
+	bottom: -20%;
+	animation: 2s bubbles 0.25s ease-in-out infinite;
+	z-index: 2;
+}
+
+.bubbles i:nth-child(11) {
+	width: 17%;
+	left: 43.5%;
+	bottom: -30%;
+	animation: 2s bubbles ease-in-out infinite;
+	z-index: 2;
+}
+
+.bubbles i:nth-child(12) {
+	width: 17%;
+	left: 73.5%;
+	bottom: -15%;
+	animation: 2s bubbles 0.25s ease-in-out infinite;
+	z-index: 2;
+}
+
+.bubbles i:nth-child(13) {
+	width: 17%;
+	left: 23.5%;
+	bottom: 0%;
+	animation: 7s bubbles-up ease-in infinite;
+}
+
+.bubbles i:nth-child(14) {
+	width: 12.5%;
+	left: 53.5%;
+	bottom: 0;
+	animation: 7s bubbles-up 3s ease-in infinite;
+}
+
+.bubbles i:nth-child(15) {
+	width: 5%;
+	left: 73.5%;
+	bottom: 0%;
+	opacity: 0.7;
+	animation: 10s bubbles-up ease-in infinite;
+}
+
+
+.bubbles i:nth-child(16) {
+	width: 7.5%;
+	left: 10.5%;
+	bottom: 0%;
+	animation: 12s bubbles-up ease-in infinite;
+}
+
+
+.bubbles i:nth-child(17) {
+	width: 20%;
+	left: 36.5%;
+	bottom: 0%;
+	animation: 9s bubbles-up ease-in infinite;
+}
+
+
+.bubbles i:nth-child(18) {
+	width: 14%;
+	left: 90.5%;
+	bottom: 40%;
+	animation: 10s bubbles-up ease-in infinite;
+}
+
+
+.bubbles i:nth-child(19) {
+	width: 15%;
+	left: 35%;
+	bottom: 0%;
+	animation: 7s bubbles-up 4s ease-in infinite;
+}
+
+
+.bubbles i:nth-child(20) {
+	width: 12%;
+	left: -5.5%;
+	bottom: 0%;
+	animation: 7s bubbles-up 0.5s ease-in infinite;
+}
+
+
+@keyframes waterfall-loop {
+	0% {
+		background-position: 0 0; }
+		100% {
+			background-position: 0 90px; } 
+		}
+
+@keyframes bubbles {
+	0% {
+		transform: scale(1);
+		filter: drop-shadow(0 0 0px #fff) brightness(1); 
+	}
+
+	50% {
+		transform: scale(1.02);
+		filter: drop-shadow(0 0 2px #fff) brightness(1.02); 
+	}
+
+	100% {
+		transform: scale(1);
+		filter: drop-shadow(0 0 0px #fff) brightness(1); 
+	} 
+}
+
+@keyframes bubbles-up {
+	0% {
+		transform: translateY(0px);
+	}
+
+	100% {
+		transform: translateY(-120px);
+		opacity: 0;
+	}
+}
+
+.slide .waterfall {
+	width: 50%;
+	height: 80%;
+	border-radius: 20px 20px 0 0;
+}
+
+.slide .flow {
+	border-radius: 20px 20px 0 0;
+}
+
+
+@media (max-width: 700px) {
+	.waterfall-container {
+		display: none;
+	}
+}

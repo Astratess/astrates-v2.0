@@ -1,0 +1,18 @@
+.slider-track {
+	display: flex;
+	width: calc(25rem * 16);
+	animation: 40s scroll linear infinite;
+	&:hover {
+		animation-play-state: paused;
+	}
+}
+
+@keyframes scroll {
+	from {
+		transform: translateX(0);
+	}
+
+	to {
+		transform:translateX(calc(-25rem*8));
+	}
+}

@@ -1,0 +1,13 @@
+.hero-box {
+	flex: 0 0 50%
+}
+
+.hero__box--width {
+	min-width: 343px
+}
+
+@media (max-width: 1000px) {
+	.hero-box {
+		flex: 1;
+	}
+}

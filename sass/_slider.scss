@@ -1,0 +1,29 @@
+.slider {
+	height: 20rem;
+	position: relative;
+	display: grid;
+	place-items: center;
+	overlow:hidden;
+	background-color: rgba(255,255,255,0.3);
+
+	&:before,
+	&:after {
+		content: '';
+		height: 100%;
+		width: 15%;
+		position: absolute;
+		z-index: 2;
+		background: linear-gradient(to right , rgba(255,255,255,0%), rgba(255,255,255,0.5) 100%);
+		top:0;
+		pointer-events: none;
+	}
+
+	&:before {
+		left: 0;
+		transform: rotate(180deg);
+	}
+
+	&:after {
+		right: 0;
+	}
+}

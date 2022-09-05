@@ -1,0 +1,57 @@
+html {
+	font-size: 10px;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Cinzel', serif;
+	color: var(--color-white);
+	background: url(../images/background.jpg);
+	overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+	display: none;
+}
+
+a {
+	text-decoration: none;
+	color:inherit;
+	display: inline-block;
+}
+
+ul {
+	list-style-type: none ;
+}
+
+h1 {
+	font-size: 8.2rem;
+	color: var(--color-white);
+	font-family: 'Source Serif Pro', serif;
+	line-height: 0.8;
+}
+
+h2 {
+	font-size: 4.2rem;
+	font-weight: 400;
+}
+
+h3 {
+	font-size: 1.5rem;
+}
+
+h4 {
+	font-size: 1.25rem;
+}
+
+h5 {
+	font-size: 1rem;
+}
+
+h6 {
+	font-size: 0.75rem;
+}
+
+.wrapper {
+	overflow: hidden;
+}

@@ -1,0 +1,71 @@
+.edges-up-left,
+.edges-up-right,
+.edges-down-left,
+.edges-down-right {
+	position: relative;
+	z-index: 5;
+}
+
+.edges-up-left:before,
+.edges-up-right:before,
+.edges-down-left:before,
+.edges-down-right:before {
+	content: '';
+	background-color: var(--color-primary);
+	width: 10.12rem;
+	height: 0.2rem;
+	position: absolute;
+	transition: 500ms opacity, 500ms transform;
+}
+
+.edges-up-left:after,
+.edges-up-right:after,
+.edges-down-left:after,
+.edges-down-right:after {
+	content: '';
+	background-color: var(--color-primary);
+	width: 0.2rem;
+	height: 10.12rem;
+	position: absolute;
+	transition: 500ms opacity, 500ms transform;
+}
+
+.edges-up-left:before {
+	top: -1rem;
+	left: -2rem;
+}
+
+.edges-up-left:after {
+	top: -2rem;
+	left: -1rem;
+}
+
+.edges-up-right:before {
+	top: -1rem;
+	right: -2rem;
+}
+
+.edges-up-right:after {
+	top: -2rem;
+	right: -1rem;
+}
+
+.edges-down-left:before {
+	bottom: -1rem;
+	left: -2rem;
+}
+
+.edges-down-left:after {
+	bottom: -2rem;
+	left: -1rem;
+}
+
+.edges-down-right:before {
+	bottom: -1rem;
+	right: -2rem;
+}
+
+.edges-down-right:after {
+	bottom: -2rem;
+	right: -1rem;
+}

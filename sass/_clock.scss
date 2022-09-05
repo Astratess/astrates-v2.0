@@ -1,0 +1,125 @@
+
+.clock {
+	position: relative; 
+	aspect-ratio: 1 / 1;
+	width: 80%;
+	aspect-ratio: 1;
+	margin-inline: auto;
+}
+
+.numbers {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.cog1, .cog2, .cog3, .cog4, .cog5, .cog6, .cog7, .cog8, .cog-orange, .arrow-short, .arrow-long, .arrow-seconds {
+	position: absolute;
+}
+
+
+.cog1 {
+	width: 20%;
+	height: 20%;
+	bottom: 78%;
+	left: 20.5%;
+	transition: 0.25s;
+}
+
+.cog2 {
+	width: 8%;
+	height: 8%;
+	bottom: 71.5%;
+	left: 25.6%;
+	transition: 0.25s;
+}
+
+.cog3 {
+	width: 21%;
+	height: 21%;
+	bottom: 53%;
+	left: 18%;
+	transition: 0.25s;
+}
+
+.cog4 {
+	width: 13.5%;
+	height: 13.5%;
+	bottom: 59.6%;
+	left: 37%;
+	transition: 0.25s;
+}
+
+.cog5 {
+	width: 8.75%;
+	height: 8.75%;
+	bottom: 40.7%;
+	left: 60%;
+	transition: 0.25s;
+}
+
+.cog6 {
+	width: 17.6%;
+	height: 17.6%;
+	bottom: 22.9%;
+	left: 34.5%;
+	transition: 0.25s;
+}
+
+.cog7 {
+	width: 20.7%;
+	height: 20.7%;
+	bottom: 10.8%;
+	left: 46.5%;
+	transition: 0.25s;
+}
+
+.cog8 {
+	width: 12.75%;
+	height: 12.75%;
+	bottom: 2%;
+	left: 42.26%;
+	transition: 0.25s;
+}
+
+.cog-orange {
+	width: 24.5%;
+	height: 24.5%;
+	bottom: 37.55%;
+	left: 37.9%;
+	transition: 0.25s;
+	z-index: 1;
+}
+.arrow-short {
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.arrow-long {
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+} 
+
+.arrow-seconds {
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.cog1, .cog2, .cog3, .cog4, .cog5, .cog6, .cog7, .cog8, .cog-orange, .arrow-short, .arrow-long, .arrow-seconds {
+	position: absolute;
+	transition: 1s transform;
+}
+
+@media (max-width: 1000px) {
+	.clock {
+		width: 35rem;
+	}
+}

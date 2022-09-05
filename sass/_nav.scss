@@ -1,0 +1,12 @@
+.nav {
+	font-size: 2rem;
+}
+
+.nav ul {
+	display: flex;
+}
+
+
+.nav li + li {
+	margin-left: 5rem;
+}
